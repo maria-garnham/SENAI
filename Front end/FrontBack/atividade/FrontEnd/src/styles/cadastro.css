@@ -1,0 +1,75 @@
+#secao-cadastro {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+#form-cadastro {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 25px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#form-cadastro label {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+#form-cadastro input,
+#form-cadastro textarea {
+  width: 100%;
+  padding: 12px;
+
+  border: 1px solid #ccc;
+  border-radius: 8px;
+
+  font-size: 1rem;
+}
+
+#form-cadastro input:focus,
+#form-cadastro textarea:focus {
+  outline: none;
+  border-color: #e67e22;
+}
+
+#form-cadastro button {
+  background: #e67e22;
+  color: white;
+
+  border: none;
+  border-radius: 8px;
+
+  padding: 14px;
+
+  font-size: 1rem;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+#form-cadastro button:hover {
+  background: #d35400;
+}
+
+.mensagem-sucesso {
+  background: #27ae60;
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.mensagem-erro {
+  background: #e74c3c;
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+}

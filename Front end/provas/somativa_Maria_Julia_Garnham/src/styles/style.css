@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  background-color: #faf6f0;
+  color: #2c3e50;
+}
+header {
+  background-color: #d35400;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 5px solid #e67e22;
+}
+.container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+.painel {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+}
+h2 {
+  color: #d35400;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #ecf0f1;
+  padding-bottom: 5px;
+}
+.grupo-input {
+  margin-bottom: 15px;
+}
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #34495e;
+}
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bdc3c7;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.total {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+.total strong {
+  color: #27ae60;
+  font-size: 1.5rem;
+}
+
+.produto-dica {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.img-produto {
+  max-width: 140px;
+  height: auto;
+  border-radius: 50%;
+  border: 3px solid #d35400;
+  padding: 3px;
+}
+
+.btn-primario,
+.btn-secundario {
+  border: none;
+  padding: 12px;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn-primario {
+  background-color: #d35400;
+  color: white;
+}
+.btn-primario:hover {
+  background-color: #a04000;
+}
+.btn-secundario {
+  background-color: #7f8c8d;
+  color: white;
+  margin-bottom: 15px;
+}
+.btn-secundario:hover {
+  background-color: #34495e;
+}
+
+
+
+/* =========================================
+   CLASSES QUE VOCÊ DEVE DESCOMENTAR E COMPLETAR
+   ========================================= */
+
+/* Missão 2: Estilo para quando o mouse entra no banner do Chef (.fatia-destaque) */
+/* Dica: Altere a cor de fundo para #e67e22 e a cor do texto para branco (#ffffff). A transformação de escala já está pronta! */
+
+
+.fatia-destaque {
+    background-color: #e67e22;
+    transform: scale(1.04);
+}
+.fatia-destaque h2 {
+    color: white;
+    border-color: white;
+}
+
+
+
+
+/* Missão 4: Estilo do card de pedido adicionado (.card-pedido) */
+/* Dica: Adicione uma linha de borda de 2px solid #d35400, um preenchimento interno (espaçamento) de 15px, pontas arredondadas de 8px e cor de fundo clara (#fff) */
+
+
+.card-pedido {
+    margin-bottom: 10px;
+    border-radius: 8px; 
+    border: 2px solid #d35400;
+    background-color: #ebe6df; 
+    
+}

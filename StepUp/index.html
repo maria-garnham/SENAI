@@ -1,0 +1,335 @@
+<!doctype html>
+
+<html class="light" lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="src/styles/styles.css" rel="stylesheet" />
+  </head>
+  <body class="bg-surface text-on-surface">
+    <!-- SideNavBar -->
+    <aside
+      class="fixed left-0 top-0 h-full w-[280px] bg-primary dark:bg-primary-container flex flex-col py-lg space-y-md z-50 border-r border-outline-variant dark:border-outline"
+    >
+      <div class="px-lg mb-xl">
+        <h1
+          class="font-h3 text-h3 font-bold text-on-primary dark:text-on-primary-container"
+        >
+          Step Up Calçados
+        </h1>
+        <p
+          class="font-label-md text-label-md text-on-primary opacity-80 dark:text-on-primary-container"
+        >
+          Inventory Control
+        </p>
+      </div>
+      <nav class="flex-1 px-sm space-y-md">
+        <a
+          class="flex items-center gap-md px-md py-sm bg-secondary-container text-on-secondary-container rounded-lg mx-md font-label-md active:scale-95 transition-transform duration-150"
+          href="#"
+        >
+          <span class="material-symbols-outlined">dashboard</span>
+          <span class="">Dashboard</span>
+        </a>
+        <a
+          class="flex items-center gap-md px-md py-sm text-on-primary opacity-80 dark:text-on-primary-container hover:opacity-100 mx-md font-label-md hover:bg-primary-container dark:hover:bg-primary hover:text-on-primary-container dark:hover:text-on-primary transition-all active:scale-95"
+          href="#"
+        >
+          <span class="material-symbols-outlined">inventory_2</span>
+          <span class="">Inventory</span>
+        </a>
+        <a
+          class="flex items-center gap-md px-md py-sm text-on-primary opacity-80 dark:text-on-primary-container hover:opacity-100 mx-md font-label-md hover:bg-primary-container dark:hover:bg-primary hover:text-on-primary-container dark:hover:text-on-primary transition-all active:scale-95"
+          href="#"
+        >
+          <span class="material-symbols-outlined">local_shipping</span>
+          <span class="">Suppliers</span>
+        </a>
+        <a
+          class="flex items-center gap-md px-md py-sm text-on-primary opacity-80 dark:text-on-primary-container hover:opacity-100 mx-md font-label-md hover:bg-primary-container dark:hover:bg-primary hover:text-on-primary-container dark:hover:text-on-primary transition-all active:scale-95"
+          href="#"
+        >
+          <span class="material-symbols-outlined">analytics</span>
+          <span class="">Reports</span>
+        </a>
+        <a
+          class="flex items-center gap-md px-md py-sm text-on-primary opacity-80 dark:text-on-primary-container hover:opacity-100 mx-md font-label-md hover:bg-primary-container dark:hover:bg-primary hover:text-on-primary-container dark:hover:text-on-primary transition-all active:scale-95"
+          href="#"
+        >
+          <span class="material-symbols-outlined">settings</span>
+          <span class="">Settings</span>
+        </a>
+      </nav>
+      <div class="px-md mb-md">
+        <button
+          class="w-full bg-secondary-container text-on-secondary-container py-sm rounded-lg font-label-md font-bold active:scale-95 transition-transform"
+        >
+          Novo Registro
+        </button>
+      </div>
+      <div
+        class="px-sm pt-lg border-t border-outline-variant dark:border-outline"
+      >
+        <a
+          class="flex items-center gap-md px-md py-sm text-on-primary opacity-80 dark:text-on-primary-container hover:opacity-100 mx-md font-label-md hover:bg-primary-container dark:hover:bg-primary hover:text-on-primary-container dark:hover:text-on-primary transition-all active:scale-95"
+          href="#"
+        >
+          <span class="material-symbols-outlined">help</span>
+          <span class="">Help Center</span>
+        </a>
+        <a
+          class="flex items-center gap-md px-md py-sm text-on-primary opacity-80 dark:text-on-primary-container hover:opacity-100 mx-md font-label-md hover:bg-primary-container dark:hover:bg-primary hover:text-on-primary-container dark:hover:text-on-primary transition-all active:scale-95"
+          href="#"
+        >
+          <span class="material-symbols-outlined">logout</span>
+          <span class="">Logout</span>
+        </a>
+      </div>
+    </aside>
+    <!-- TopAppBar -->
+    <header
+      class="fixed top-0 right-0 h-16 bg-white/80 backdrop-blur-md border-b border-outline-variant flex justify-between items-center px-lg z-40 w-[calc(100%-280px)]"
+    >
+      <div class="flex items-center gap-md w-1/2">
+        <span
+          class="material-symbols-outlined text-on-surface-variant"
+          data-icon="search"
+          >search</span
+        >
+        <input
+          class="w-full bg-transparent border-none focus:ring-0 font-body-sm placeholder:text-outline"
+          placeholder="Pesquisar no sistema..."
+          type="text"
+        />
+      </div>
+      <div class="flex items-center gap-md">
+        <button
+          class="text-on-surface-variant hover:text-primary transition-colors"
+        >
+          <span class="material-symbols-outlined">notifications</span>
+        </button>
+        <div class="h-6 w-[1px] bg-outline-variant mx-sm"></div>
+        <button
+          class="bg-primary text-on-primary px-lg py-sm rounded-full font-label-sm hover:opacity-90 transition-opacity"
+        >
+          Novo Registro
+        </button>
+      </div>
+    </header>
+    <!-- Main Content -->
+    <main
+      class="mt-16 p-lg bg-surface-container-lowest min-h-[calc(100vh-64px)] ml-[280px]"
+    >
+      <div class="max-w-6xl mx-auto space-y-lg">
+        <!-- Minimal Stats Row -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-lg">
+          <div class="bg-white p-lg rounded-xl border border-outline-variant">
+            <p class="text-on-surface-variant font-label-sm mb-xs">
+              Vendas Hoje
+            </p>
+            <h3 class="text-h2 font-bold text-primary">R$ 4.250</h3>
+            <div class="mt-sm flex items-center text-green-600 font-label-sm">
+              <span class="material-symbols-outlined text-sm mr-1"
+                >trending_up</span
+              >
+              +8%
+            </div>
+          </div>
+          <div class="bg-white p-lg rounded-xl border border-outline-variant">
+            <p class="text-on-surface-variant font-label-sm mb-xs">
+              Itens em Alerta
+            </p>
+            <h3 class="text-h2 font-bold text-error">08</h3>
+            <p class="mt-sm text-on-surface-variant font-label-sm">
+              Abaixo do mínimo
+            </p>
+          </div>
+          <div class="bg-white p-lg rounded-xl border border-outline-variant">
+            <p class="text-on-surface-variant font-label-sm mb-xs">
+              Pedidos Pendentes
+            </p>
+            <h3 class="text-h2 font-bold text-primary">24</h3>
+            <p class="mt-sm text-on-surface-variant font-label-sm">
+              Aguardando envio
+            </p>
+          </div>
+          <div class="bg-white p-lg rounded-xl border border-outline-variant">
+            <p class="text-on-surface-variant font-label-sm mb-xs">
+              Saúde do Estoque
+            </p>
+            <h3 class="text-h2 font-bold text-primary">94%</h3>
+            <div
+              class="mt-sm w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden"
+            >
+              <div class="bg-primary h-full w-[94%]"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Main Content Area: Recent Moves + Quick Actions -->
+        <div class="grid grid-cols-12 gap-lg">
+          <!-- Simplified Recent Activity -->
+          <section
+            class="col-span-12 lg:col-span-8 bg-white rounded-xl border border-outline-variant"
+          >
+            <div
+              class="px-lg py-md border-b border-outline-variant flex justify-between items-center"
+            >
+              <h3 class="font-h3 text-primary">Movimentações Recentes</h3>
+              <button class="text-primary font-label-sm hover:underline">
+                Ver tudo
+              </button>
+            </div>
+            <div class="p-0">
+              <table class="w-full text-left">
+                <tbody class="divide-y divide-outline-variant">
+                  <tr
+                    class="hover:bg-surface-container-low/50 transition-colors"
+                  >
+                    <td class="px-lg py-md">
+                      <div class="flex flex-col">
+                        <span class="font-body-md font-medium text-on-surface"
+                          >Vans Old Skool Black</span
+                        >
+                        <span class="text-xs text-on-surface-variant"
+                          >SKU: VN-39482-01</span
+                        >
+                      </div>
+                    </td>
+                    <td class="px-lg py-md">
+                      <span
+                        class="px-md py-1 rounded-full bg-green-50 text-green-700 text-[10px] font-bold uppercase tracking-wider"
+                        >Entrada</span
+                      >
+                    </td>
+                    <td class="px-lg py-md font-body-sm font-medium">+24</td>
+                    <td
+                      class="px-lg py-md text-on-surface-variant text-xs text-right"
+                    >
+                      09:42
+                    </td>
+                  </tr>
+                  <tr
+                    class="hover:bg-surface-container-low/50 transition-colors"
+                  >
+                    <td class="px-lg py-md">
+                      <div class="flex flex-col">
+                        <span class="font-body-md font-medium text-on-surface"
+                          >Puma Suede Classic</span
+                        >
+                        <span class="text-xs text-on-surface-variant"
+                          >SKU: PM-11203-05</span
+                        >
+                      </div>
+                    </td>
+                    <td class="px-lg py-md">
+                      <span
+                        class="px-md py-1 rounded-full bg-red-50 text-red-700 text-[10px] font-bold uppercase tracking-wider"
+                        >Saída</span
+                      >
+                    </td>
+                    <td class="px-lg py-md font-body-sm font-medium">-02</td>
+                    <td
+                      class="px-lg py-md text-on-surface-variant text-xs text-right"
+                    >
+                      08:15
+                    </td>
+                  </tr>
+                  <tr
+                    class="hover:bg-surface-container-low/50 transition-colors"
+                  >
+                    <td class="px-lg py-md">
+                      <div class="flex flex-col">
+                        <span class="font-body-md font-medium text-on-surface"
+                          >Nike Air Max 270</span
+                        >
+                        <span class="text-xs text-on-surface-variant"
+                          >SKU: NK-88210-09</span
+                        >
+                      </div>
+                    </td>
+                    <td class="px-lg py-md">
+                      <span
+                        class="px-md py-1 rounded-full bg-red-50 text-red-700 text-[10px] font-bold uppercase tracking-wider"
+                        >Saída</span
+                      >
+                    </td>
+                    <td class="px-lg py-md font-body-sm font-medium">-01</td>
+                    <td
+                      class="px-lg py-md text-on-surface-variant text-xs text-right"
+                    >
+                      Ontem
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+          <!-- Navigation/Quick Actions Vertical List -->
+          <aside class="col-span-12 lg:col-span-4 space-y-lg">
+            <div class="bg-primary text-on-primary p-lg rounded-xl">
+              <h4 class="font-label-md font-bold mb-md">Ações Rápidas</h4>
+              <div class="grid grid-cols-1 gap-sm">
+                <button
+                  class="flex items-center gap-md p-md bg-white/10 rounded-lg hover:bg-white/20 transition-all text-left"
+                >
+                  <span class="material-symbols-outlined">barcode_scanner</span>
+                  <span class="font-label-sm">Escanear Produto</span>
+                </button>
+                <button
+                  class="flex items-center gap-md p-md bg-white/10 rounded-lg hover:bg-white/20 transition-all text-left"
+                >
+                  <span class="material-symbols-outlined">local_shipping</span>
+                  <span class="font-label-sm">Confirmar Entrega</span>
+                </button>
+                <button
+                  class="flex items-center gap-md p-md bg-white/10 rounded-lg hover:bg-white/20 transition-all text-left"
+                >
+                  <span class="material-symbols-outlined">inventory</span>
+                  <span class="font-label-sm">Balanço Semanal</span>
+                </button>
+              </div>
+            </div>
+            <div
+              class="bg-error-container/20 border border-error/10 p-lg rounded-xl"
+            >
+              <div class="flex items-center gap-sm text-error mb-sm">
+                <span class="material-symbols-outlined text-[20px]"
+                  >warning</span
+                >
+                <h4 class="font-label-md font-bold">Reposição Crítica</h4>
+              </div>
+              <ul class="space-y-xs">
+                <li
+                  class="flex justify-between text-xs py-xs border-b border-error/5"
+                >
+                  <span class="text-on-surface">Nike Air Max (42)</span>
+                  <span class="font-bold text-error">2 un.</span>
+                </li>
+                <li class="flex justify-between text-xs py-xs">
+                  <span class="text-on-surface">Adidas Ultraboost (39)</span>
+                  <span class="font-bold text-error">1 un.</span>
+                </li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </main>
+    <!-- Global Floating Action -->
+    <button
+      class="fixed bottom-lg right-lg w-12 h-12 bg-primary text-on-primary rounded-full shadow-lg flex items-center justify-center hover:scale-105 active:scale-95 transition-all z-50"
+    >
+      <span class="material-symbols-outlined" data-icon="add">add</span>
+    </button>
+  </body>
+</html>

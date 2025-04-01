@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="scr/style/style.css" />
+    <title>TechFood - Cardápio Digital</title>
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li class="logo">TechFood</li>
+        <li class="search-icon">🔍</li>
+        <li class="cart-icon">🛒</li>
+      </ul>
+    </header>
+    <section class="banner-hero">
+      <h1>Sabor & Saber</h1>
+      <p>A melhor gastronomia tecnológica da região.</p>
+    </section>
+    <section class="menu-container">
+      <form action="#" class="abas-lista">
+        <input
+          type="radio"
+          name="categoria"
+          id="massa"
+          checked
+          aria-checked="true"
+        />
+        <label for="massa">Massas</label>
+        <input type="radio" name="categoria" id="bebida" />
+        <label for="bebida">Bebidas</label>
+        <input type="radio" name="categoria" id="doce" />
+        <label for="doce">Doces</label>
+      </form>
+    </section>
+
+    <section class="aba-tela" id="tela-massas">
+      <section class="grid-produtos">
+        <section class="card">
+          <img src="scr/img/foto-lasanha.jpg" alt="Imagem de uma Lasanha Tradicional em um prato" />
+          <h3>Lasanha Tradicional</h3>
+          <p>Massa artesanal ao molho bolonhesa com 4 queijos.</p>
+          <p class="preco">R$ 45,90</p>
+          <button
+            type="button"
+            class="btn-pedir"
+            onclick="alert('Adicionado')"
+            aria-label="botao realizar pedido"
+          >
+            Pedir
+          </button>
+        </section>
+        <section class="card">
+          <img src="scr/img/ravioli.jpg" alt="Imagem ravioli em um prato branco" />
+          <h3>Ravioli de Espinafre</h3>
+          <p>Recheado com ricota fresca e nozes picadas.</p>
+          <p class="preco">R$ 39,00</p>
+          <button
+            type="button"
+            class="btn-pedir"
+            onclick="alert('Adicionado')"
+            aria-label="botao realizar pedido"
+          >
+            Pedir
+          </button>
+        </section>
+      </section>
+    </section>
+
+    <footer class="rodape">
+      Siga-nos: <a href="#">FB</a> <a href="#">IG</a>
+    </footer>
+  </body>
+</html>
